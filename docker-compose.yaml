@@ -5,3 +5,5 @@ services:
     build:
       context: ./code
       dockerfile: Dockerfile
+    env_file:
+      - ./env/.jupyter.env
