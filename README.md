@@ -1,5 +1,11 @@
-# python-docker-dev-template
-Template for the development of Python codebase in Docker
+# Overview
+This is a template for generating a reproducible Python environment for data science within a docker environment. The current base setup is like the following:
+
+|Package|Usage|
+|-------|-----|
+|`docker`| OS environment|
+|`poetry`|Python package manager|
+|`jupyter notebook`|Development environment|
 
 # Steps for environment creation
 
@@ -8,9 +14,9 @@ Template for the development of Python codebase in Docker
 sudo docker-compose build .
 ```
 
-2.1 Start docker container development environment for CLI development
+2.1 Start `python` within docker container
 ```bash
-sudo docker-compose run code bash
+sudo docker-compose run code python
 ```
 
 2.2 Start jupyter notebook
