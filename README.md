@@ -26,12 +26,12 @@ sudo docker-compose up --build
 
 # Add a python package
 
-1. Start the container in interactive mode
+1. Use `poetry` to add package and resolve dependencies
 ```
-sudo docker-compose run code bash
+sudo docker-compose run code poetry add <package>
 ```
 
-2. Install/Add package using poetry
+2. Commit changes to git
 ```
-poetry add <package-name>
+git add code/poetry.lock code/pyproject.toml
 ```
