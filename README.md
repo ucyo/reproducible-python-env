@@ -9,6 +9,11 @@ This is a template for generating a reproducible Python environment for data sci
 
 # Steps for environment creation
 
+0. Create environment files (e.g. copy examples)
+```bash
+cp env/.jupyter.env.example env/.jupyter.env
+```
+
 1. Build docker container
 ```bash
 sudo docker-compose build .
