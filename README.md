@@ -17,3 +17,15 @@ sudo docker-compose run code bash
 ```
 sudo docker-compose up --build
 ```
+
+# Add a python package
+
+1. Start the container in interactive mode
+```
+sudo docker-compose run code bash
+```
+
+2. Install/Add package using poetry
+```
+poetry add <package-name>
+```
