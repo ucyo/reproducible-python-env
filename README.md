@@ -12,3 +12,8 @@ sudo docker-compose build .
 ```bash
 sudo docker-compose run code bash
 ```
+
+2.2 Start jupyter notebook
+```
+sudo docker-compose up --build
+```
